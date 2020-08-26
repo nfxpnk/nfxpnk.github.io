@@ -65,12 +65,22 @@ function reloadCSS() {
     return gulp.src('./css/*.css').pipe(connect.reload());
 }
 
-function watchStyles(src) {
+function reloadHTML() {
+    log('Reloading HTML...');
+
+    return gulp.src('./*.html').pipe(connect.reload());
+}
+
+function watch(src) {
     log('Watching styles ' + c.cyan(src + '/**/*.scss'));
 
     gulp.watch(src + '/**/*.scss', gulp.series(compileProjectScss, reloadCSS)).on('change', function(changedFile) {
         log('File ' + c.yellow(changedFile) + ' was modified');
         sassLinter(changedFile);
+    });
+
+    gulp.watch(['./*.html'], gulp.series(reloadHTML)).on('change', function(changedFile) {
+        log('File ' + c.yellow(changedFile) + ' was modified');
     });
 }
 
@@ -82,7 +92,7 @@ gulp.task(
     'default',
     gulp.series(
         gulp.parallel(connectLiveReload, function() {
-            watchStyles('./scss');
+            watch('./scss');
         })
     )
 );
