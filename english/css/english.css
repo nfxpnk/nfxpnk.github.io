@@ -1,9 +1,11 @@
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
+/* stylelint-disable */
+/* stylelint-enable */
 body {
   background: #ccc;
   font-family: 'Verdana', 'Arial', sans-serif;
@@ -72,7 +74,7 @@ body a:focus {
 
 .data .data-cell,
 .data .data-cell-alt {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #333;
 }
 

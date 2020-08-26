@@ -1,25 +1,36 @@
 *,
-*:after,
-*:before {
+*::after,
+*::before {
     box-sizing: border-box;
 }
+
+/* stylelint-disable */
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #ccc;
+$color-red: #da1f27;
+$color-grey-900: #333;
+$color-grey-200: #eee;
+$color-green: #ccffde;
+$color-yellow: #ffc;
+/* stylelint-enable */
 
 $space: 20px;
 
 body {
-    background: #ccc;
+    background: $color-grey;
     font-family: 'Verdana', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 1.6;
     max-height: 99999px;
 
     a {
-        color: #000;
+        color: $color-black;
     }
 
     a:hover,
     a:focus {
-        color: #da1f27;
+        color: $color-red;
     }
 }
 
@@ -41,19 +52,20 @@ body {
 
     th {
         display: none;
-    }
-    th strong {
-        display: block;
-        background: #000;
-        color: #fff;
-        font-size: 12px;
-        padding: 4px;
-    }
 
-    th img {
-        width: 258px;
-        display: block;
-        margin: 0 auto 5px;
+        strong {
+            display: block;
+            background: $color-black;
+            color: $color-white;
+            font-size: 12px;
+            padding: 4px;
+        }
+
+        img {
+            width: 258px;
+            display: block;
+            margin: 0 auto 5px;
+        }
     }
 
     tr,
@@ -72,11 +84,11 @@ body {
 
     .data-cell,
     .data-cell-alt {
-        background: #fff;
-        border: 1px solid #333;
+        background-color: $color-white;
+        border: 1px solid $color-grey-900;
 
         &:nth-child(odd) {
-            background: #eee;
+            background: $color-grey-200;
         }
     }
 
@@ -87,7 +99,6 @@ body {
     .translation {
         display: none;
         padding: 10px;
-
     }
 
     %block {
@@ -104,18 +115,16 @@ body {
     }
 
     .data-cell.show {
-        background: #ccffde;
+        background: $color-green;
 
         .english {
-            background: #ffc;
+            background: $color-yellow;
         }
 
         .translation {
             display: block;
         }
     }
-
-
 
     @media (min-width: 768px) {
         tr {
