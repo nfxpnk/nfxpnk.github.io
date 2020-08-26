@@ -108,6 +108,32 @@ body {
 
     .english {
         @extend %block;
+
+        strong[data-details] {
+            position: relative;
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px dashed $color-red;
+
+            &::before {
+                display: none;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 100%;
+                left: 0;
+                content: attr(data-details);
+                background-color: $color-grey;
+                padding: 4px;
+                border-radius: 5px;
+                border: 1px solid $color-green;
+                font-size: 9px;
+            }
+
+            &:hover::before {
+                display: block;
+            }
+        }
     }
 
     .pattern {

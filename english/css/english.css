@@ -97,6 +97,32 @@ body a:focus {
   padding: 10px;
 }
 
+.data .english strong[data-details] {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px dashed #da1f27;
+}
+
+.data .english strong[data-details]::before {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-details);
+  background-color: #ccc;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccffde;
+  font-size: 9px;
+}
+
+.data .english strong[data-details]:hover::before {
+  display: block;
+}
+
 .data .data-cell.show {
   background: #ccffde;
 }
