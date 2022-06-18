@@ -1,23 +1,22 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* stylelint-disable */
-/* stylelint-enable */
 body {
   background: #ccc;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: "Verdana", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.6;
   max-height: 99999px;
 }
-
 body a {
   color: #000;
 }
-
 body a:hover,
 body a:focus {
   color: #da1f27;
@@ -33,17 +32,17 @@ body a:focus {
 .data {
   width: 100%;
 }
-
+.data strong {
+  font-weight: 700;
+}
 .data th,
 .data .data-label {
   font-weight: 700;
   padding: 10px;
 }
-
 .data th {
   display: none;
 }
-
 .data th strong {
   display: block;
   background: #000;
@@ -51,59 +50,45 @@ body a:focus {
   font-size: 12px;
   padding: 4px;
 }
-
 .data th img {
   width: 258px;
   display: block;
   margin: 0 auto 5px;
 }
-
 .data tr,
 .data td {
   display: block;
 }
-
 .data th,
 .data td {
   vertical-align: top;
 }
-
 .data .data-cell {
   cursor: pointer;
 }
-
 .data .data-cell,
 .data .data-cell-alt {
   background-color: #fff;
   border: 1px solid #333;
 }
-
 .data .data-cell:nth-child(odd),
 .data .data-cell-alt:nth-child(odd) {
   background: #eee;
 }
-
-.data strong {
-  font-weight: 700;
-}
-
 .data .translation {
   display: none;
   padding: 10px;
 }
-
-.data .english, .data .pattern {
+.data .pattern, .data .english {
   display: block;
   padding: 10px;
 }
-
 .data .english strong[data-details] {
   position: relative;
   display: inline-block;
   border-radius: 5px;
   border: 1px dashed #da1f27;
 }
-
 .data .english strong[data-details]::before {
   display: none;
   position: absolute;
@@ -118,23 +103,18 @@ body a:focus {
   border: 1px solid #ccffde;
   font-size: 9px;
 }
-
 .data .english strong[data-details]:hover::before {
   display: block;
 }
-
 .data .data-cell.show {
   background: #ccffde;
 }
-
 .data .data-cell.show .english {
   background: #ffc;
 }
-
 .data .data-cell.show .translation {
   display: block;
 }
-
 @media (min-width: 768px) {
   .data tr {
     display: table-row;
@@ -143,7 +123,7 @@ body a:focus {
     display: table-cell;
   }
   .data th,
-  .data .data-label {
+.data .data-label {
     display: table-cell;
   }
 }
@@ -153,8 +133,6 @@ body a:focus {
   cursor: pointer;
   right: 20px;
   top: 20px;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: "Verdana", "Arial", sans-serif;
   font-size: 20px;
 }
-
-/*# sourceMappingURL=english.css.map */

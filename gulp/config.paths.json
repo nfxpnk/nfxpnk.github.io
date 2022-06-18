@@ -1,0 +1,6 @@
+{
+    "scssInclude": "",
+    "scssSource": "/english/scss",
+    "cssDestination": "/english/css",
+    "httpRoot": "/english"
+}

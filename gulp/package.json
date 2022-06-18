@@ -1,0 +1,37 @@
+{
+  "name": "gulp-scss",
+  "version": "1.0.0",
+  "description": "gulp-scss",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nfxpnk/gulp-scss.git"
+  },
+  "devDependencies": {
+    "ansi-colors": "^4.1.1",
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-scss": "^4.1.0",
+    "yargs": "^17.3.1"
+  },
+  "dependencies": {
+    "gulp-livereload": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "postcss-scss": "^4.0.3",
+    "sass": "^1.48.0",
+    "stylelint-order": "^5.0.0"
+  }
+}

@@ -1,10 +1,12 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
+
+	&::after,
+	&::before {
+		box-sizing: border-box;
+	}
 }
 
-/* stylelint-disable */
 $color-black: #000;
 $color-white: #fff;
 $color-grey: #ccc;
@@ -13,166 +15,164 @@ $color-grey-900: #333;
 $color-grey-200: #eee;
 $color-green: #ccffde;
 $color-yellow: #ffc;
-/* stylelint-enable */
-
 $space: 20px;
 
 body {
-    background: $color-grey;
-    font-family: 'Verdana', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    max-height: 99999px;
+	background: $color-grey;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	max-height: 99999px;
 
-    a {
-        color: $color-black;
-    }
+	a {
+		color: $color-black;
+	}
 
-    a:hover,
-    a:focus {
-        color: $color-red;
-    }
+	a:hover,
+	a:focus {
+		color: $color-red;
+	}
 }
 
 .container {
-    min-width: 320px;
-    width: 86%;
-    max-width: 1000px;
-    margin: $space auto;
+	min-width: 320px;
+	width: 86%;
+	max-width: 1000px;
+	margin: $space auto;
 }
 
 .data {
-    width: 100%;
+	width: 100%;
 
-    th,
-    .data-label {
-        font-weight: 700;
-        padding: 10px;
-    }
+	strong {
+		font-weight: 700;
+	}
 
-    th {
-        display: none;
+	th,
+	.data-label {
+		font-weight: 700;
+		padding: 10px;
+	}
 
-        strong {
-            display: block;
-            background: $color-black;
-            color: $color-white;
-            font-size: 12px;
-            padding: 4px;
-        }
+	th {
+		display: none;
 
-        img {
-            width: 258px;
-            display: block;
-            margin: 0 auto 5px;
-        }
-    }
+		strong {
+			display: block;
+			background: $color-black;
+			color: $color-white;
+			font-size: 12px;
+			padding: 4px;
+		}
 
-    tr,
-    td {
-        display: block;
-    }
+		img {
+			width: 258px;
+			display: block;
+			margin: 0 auto 5px;
+		}
+	}
 
-    th,
-    td {
-        vertical-align: top;
-    }
+	tr,
+	td {
+		display: block;
+	}
 
-    .data-cell {
-        cursor: pointer;
-    }
+	th,
+	td {
+		vertical-align: top;
+	}
 
-    .data-cell,
-    .data-cell-alt {
-        background-color: $color-white;
-        border: 1px solid $color-grey-900;
+	.data-cell {
+		cursor: pointer;
+	}
 
-        &:nth-child(odd) {
-            background: $color-grey-200;
-        }
-    }
+	.data-cell,
+	.data-cell-alt {
+		background-color: $color-white;
+		border: 1px solid $color-grey-900;
 
-    strong {
-        font-weight: 700;
-    }
+		&:nth-child(odd) {
+			background: $color-grey-200;
+		}
+	}
 
-    .translation {
-        display: none;
-        padding: 10px;
-    }
+	.translation {
+		display: none;
+		padding: 10px;
+	}
 
-    %block {
-        display: block;
-        padding: 10px;
-    }
+	%block {
+		display: block;
+		padding: 10px;
+	}
 
-    .english {
-        @extend %block;
+	.english {
+		@extend %block;
 
-        strong[data-details] {
-            position: relative;
-            display: inline-block;
-            border-radius: 5px;
-            border: 1px dashed $color-red;
+		strong[data-details] {
+			position: relative;
+			display: inline-block;
+			border-radius: 5px;
+			border: 1px dashed $color-red;
 
-            &::before {
-                display: none;
-                position: absolute;
-                width: 100%;
-                text-align: center;
-                bottom: 100%;
-                left: 0;
-                content: attr(data-details);
-                background-color: $color-grey;
-                padding: 4px;
-                border-radius: 5px;
-                border: 1px solid $color-green;
-                font-size: 9px;
-            }
+			&::before {
+				display: none;
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				bottom: 100%;
+				left: 0;
+				content: attr(data-details);
+				background-color: $color-grey;
+				padding: 4px;
+				border-radius: 5px;
+				border: 1px solid $color-green;
+				font-size: 9px;
+			}
 
-            &:hover::before {
-                display: block;
-            }
-        }
-    }
+			&:hover::before {
+				display: block;
+			}
+		}
+	}
 
-    .pattern {
-        @extend %block;
-    }
+	.pattern {
+		@extend %block;
+	}
 
-    .data-cell.show {
-        background: $color-green;
+	.data-cell.show {
+		background: $color-green;
 
-        .english {
-            background: $color-yellow;
-        }
+		.english {
+			background: $color-yellow;
+		}
 
-        .translation {
-            display: block;
-        }
-    }
+		.translation {
+			display: block;
+		}
+	}
 
-    @media (min-width: 768px) {
-        tr {
-            display: table-row;
-        }
+	@media (min-width: 768px) {
+		tr {
+			display: table-row;
+		}
 
-        td {
-            display: table-cell;
-        }
+		td {
+			display: table-cell;
+		}
 
-        th,
-        .data-label {
-            display: table-cell;
-        }
-    }
+		th,
+		.data-label {
+			display: table-cell;
+		}
+	}
 }
 
 .button {
-    position: fixed;
-    cursor: pointer;
-    right: $space;
-    top: $space;
-    font-family: 'Verdana', 'Arial', sans-serif;
-    font-size: 20px;
+	position: fixed;
+	cursor: pointer;
+	right: $space;
+	top: $space;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	font-size: 20px;
 }
