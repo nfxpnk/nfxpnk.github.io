@@ -23,9 +23,6 @@ body a:focus {
 }
 
 .container {
-  min-width: 320px;
-  width: 86%;
-  max-width: 1000px;
   margin: 20px auto;
 }
 

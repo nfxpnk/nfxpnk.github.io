@@ -147,7 +147,7 @@ function watchCSS() {
 function watchHTML() {
     log('Watching HTML');
 
-    gulp.watch([config['root'] + '/*.html']).on('change', function (changedFile) {
+    gulp.watch([config['root'] + '/english/*.html']).on('change', function (changedFile) {
         log('File ' + c.yellow(changedFile) + ' was modified');
 
         livereload.reload(path.basename(changedFile));
