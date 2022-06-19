@@ -1,0 +1,25 @@
+<svg width="260" height="35" viewBox="0 0 260 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_194)">
+<rect width="260" height="35" transform="matrix(-1 0 0 1 260 0)" fill="white"/>
+<circle r="48.5" transform="matrix(-1 0 0 1 195.5 66.5)" stroke="#226BD8" stroke-width="4"/>
+<rect width="260" height="4" transform="matrix(-1 0 0 1 260 31)" fill="black"/>
+<rect width="4" height="30" transform="matrix(-1 0 0 1 132 3)" fill="black"/>
+<line x1="198" y1="31" x2="198" y2="6" stroke="white" stroke-width="2"/>
+<line x1="203" y1="31" x2="203" y2="6" stroke="white" stroke-width="2"/>
+<line x1="208" y1="31" x2="208" y2="6" stroke="white" stroke-width="2"/>
+<line x1="213" y1="31" x2="213" y2="6" stroke="white" stroke-width="2"/>
+<line x1="218" y1="31" x2="218" y2="6" stroke="white" stroke-width="2"/>
+<line x1="223" y1="31" x2="223" y2="6" stroke="white" stroke-width="2"/>
+<line x1="228" y1="31" x2="228" y2="6" stroke="white" stroke-width="2"/>
+<line x1="233" y1="31" x2="233" y2="6" stroke="white" stroke-width="2"/>
+<line x1="238" y1="31" x2="238" y2="6" stroke="white" stroke-width="2"/>
+<line x1="243" y1="31" x2="243" y2="6" stroke="white" stroke-width="2"/>
+<line x1="191.515" y1="12.1924" x2="202.828" y2="23.5061" stroke="#E53030" stroke-width="4" stroke-linecap="round"/>
+<line x1="191.515" y1="23.5061" x2="202.828" y2="12.1924" stroke="#E53030" stroke-width="4" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_6_194">
+<rect width="260" height="35" fill="white" transform="matrix(-1 0 0 1 260 0)"/>
+</clipPath>
+</defs>
+</svg>

@@ -2,6 +2,6 @@
 <rect width="260" height="35" fill="white"/>
 <rect y="31" width="260" height="4" fill="black"/>
 <rect x="128" y="3" width="4" height="30" fill="black"/>
-<line x1="59.7782" y1="13.0502" x2="69.6777" y2="22.9497" stroke="#6D24B6" stroke-width="4" stroke-linecap="round"/>
-<line x1="59.7782" y1="22.9497" x2="69.6777" y2="13.0502" stroke="#6D24B6" stroke-width="4" stroke-linecap="round"/>
+<line x1="57.5147" y1="12.1924" x2="68.8284" y2="23.5061" stroke="#6D24B6" stroke-width="4" stroke-linecap="round"/>
+<line x1="57.5147" y1="23.5061" x2="68.8284" y2="12.1924" stroke="#6D24B6" stroke-width="4" stroke-linecap="round"/>
 </svg>
