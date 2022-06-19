@@ -79,13 +79,14 @@ $space: 20px;
 	max-width: 464px;
 
 	@media (min-width: 769px) {
-		grid-template-rows: repeat(2, 1fr);
 		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 		max-width: 100%;
 	}
 
 	@media (min-width: 1110px) {
 		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
 		max-width: 100%;
 	}
 }
